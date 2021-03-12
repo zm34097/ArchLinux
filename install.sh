@@ -25,9 +25,9 @@ touch /etc/locale.conf
 echo "LANG=en_US.UTF-8" >> /etc/locale.conf
 touch /etc/hostname
 echo "archlinux" >> /etc/hostname
-echo "127.0.0.1	localhost" >> /etc/hosts
-echo "::1		localhost" >> /etc/hosts
-echo "127.0.1.1	archlinux.localdomain	archlinux" >> /etc/hosts
+echo "127.0.0.1  localhost" >> /etc/hosts
+echo "::1   localhost" >> /etc/hosts
+echo "127.0.1.1   archlinux.localdomain   archlinux" >> /etc/hosts
 mkinitcpio -P
 (
 echo 1234;
