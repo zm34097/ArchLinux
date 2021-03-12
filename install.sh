@@ -14,7 +14,7 @@ echo;
 echo;
 echo w;
 ) | fdisk /dev/sda
-mkfs.ext4 /dev/sda2
+mkfs.ext4 /dev/sda2 -Y
 mount /dev/sda2 /mnt
 pacstrap /mnt base linux linux-firmware
 genfstab -U /mnt >> /mnt/etc/fstab
