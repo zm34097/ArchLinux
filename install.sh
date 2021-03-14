@@ -14,6 +14,7 @@ echo;
 echo;
 echo w;
 ) | fdisk /dev/sda
+mkfs.fat -F32 /dev/sda1 -Y
 mkfs.ext4 /dev/sda2 -Y
 mount /dev/sda2 /mnt
 pacstrap /mnt base linux linux-firmware
