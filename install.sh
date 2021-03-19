@@ -35,4 +35,5 @@ mkinitcpio -P
 echo 1234;
 echo 1234;
 ) | passwd
+pacman -Syy --noconfirm efibootmgr
 EOF
