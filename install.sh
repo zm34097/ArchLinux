@@ -21,6 +21,7 @@ mount /dev/sda1 /mnt/efi
 #mount /dev/sda1 /mnt/boot
 pacstrap /mnt base linux linux-firmware
 genfstab -U /mnt >> /mnt/etc/fstab
+cp ./ArchLinux /mnt/root/
 arch-chroot /mnt <<- EOF
 ln -sf /usr/share/zoneinfo/Europe/Minsk /etc/localtime
 hwclock --systohc
