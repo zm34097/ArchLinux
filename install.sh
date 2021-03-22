@@ -36,5 +36,8 @@ mkinitcpio -P
 echo 1234;
 echo 1234;
 ) | passwd
+pacman -Syy --noconfirm grub
 pacman -Syy --noconfirm efibootmgr
+grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
+grub-mkconfig -o /boot/grub/grub.cfg
 EOF
