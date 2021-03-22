@@ -12,3 +12,7 @@ echo "DHCP=yes" >> /etc/systemd/network/20-wired.network
 systemctl restart systemd-networkd
 systemctl enable systemd-resolved
 systemctl start systemd-resolved
+
+# Install Gnome UI:
+pacman -Syy --noconfirm gnome
+
