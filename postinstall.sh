@@ -15,4 +15,5 @@ systemctl start systemd-resolved
 
 # Install Gnome UI:
 pacman -Syy --noconfirm gnome
-
+systemctl enable gdm
+systemctl start gdm
